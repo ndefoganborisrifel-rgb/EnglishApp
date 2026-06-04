@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>English Class — Apprendre l'anglais de A1 à B2</title>
+  <meta name="description" content="Plateforme d'apprentissage de l'anglais pour francophones : cours, exemples, tableaux et exercices auto-corrigés du niveau A1 au B2.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-root="" data-page="home">
+  <header class="site-header" data-nav></header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero container">
+      <span class="eyebrow">Anglais pour francophones · A1 → B2</span>
+      <h1>Apprenez l'anglais, pas à pas.</h1>
+      <p>Des cours clairs en français, des exemples en anglais et des exercices
+         corrigés automatiquement. Idéal en classe avec votre enseignant ou en autonomie.</p>
+      <div class="hero__actions">
+        <a class="btn btn--primary btn--lg" href="niveaux/a1/index.html">Commencer au niveau A1</a>
+        <a class="btn btn--ghost btn--lg" href="#niveaux">Voir tous les niveaux</a>
+      </div>
+    </section>
+
+    <!-- TABLEAU DE BORD PROGRESSION -->
+    <section class="container">
+      <div class="dashboard">
+        <h2>📈 Votre progression</h2>
+        <p style="opacity:.9;margin:0">Sauvegardée automatiquement sur cet appareil.</p>
+        <div class="dashboard__stats">
+          <div class="dashboard__stat">
+            <span class="num" data-stat="done">0</span>
+            <span class="lbl">chapitres terminés</span>
+          </div>
+          <div class="dashboard__stat">
+            <span class="num" data-stat="score">0</span>
+            <span class="lbl">bonnes réponses cumulées</span>
+          </div>
+          <div class="dashboard__stat">
+            <span class="num"><span data-stat="done">0</span>/49</span>
+            <span class="lbl">chapitres au total</span>
+          </div>
+        </div>
+        <div class="progress-bar" data-progress-bar="" data-total="49" style="margin-top:1.5rem">
+          <div class="progress-bar__fill"></div>
+        </div>
+        <p style="margin-top:1rem">
+          <button class="btn btn--outline" style="border-color:rgba(255,255,255,.5);color:#fff" data-reset-progress>Réinitialiser ma progression</button>
+        </p>
+      </div>
+    </section>
+
+    <!-- LES 4 NIVEAUX -->
+    <section class="container" id="niveaux">
+      <h2 class="section-title">Les 4 niveaux</h2>
+      <div class="grid grid--4">
+        <a class="level-card lvl-a1" href="niveaux/a1/index.html">
+          <span class="level-card__badge">A1</span>
+          <h3>Les bases</h3>
+          <p>Alphabet, nombres, pronoms, to be / to have, présent simple, questions…</p>
+          <div class="progress-mini" data-progress-bar="a1-" data-total="12">
+            <span data-progress-label></span>
+            <div class="progress-bar" style="margin-top:.4rem"><div class="progress-bar__fill"></div></div>
+          </div>
+        </a>
+        <a class="level-card lvl-a2" href="niveaux/a2/index.html">
+          <span class="level-card__badge">A2</span>
+          <h3>Construire des phrases</h3>
+          <p>Présent continu, passé, futur, comparatifs, quantité, modaux de base…</p>
+          <div class="progress-mini" data-progress-bar="a2-" data-total="9">
+            <span data-progress-label></span>
+            <div class="progress-bar" style="margin-top:.4rem"><div class="progress-bar__fill"></div></div>
+          </div>
+        </a>
+        <a class="level-card lvl-b1" href="niveaux/b1/index.html">
+          <span class="level-card__badge">B1</span>
+          <h3>Aller plus loin</h3>
+          <p>Present perfect, relatives, question tags, discours indirect, conditionnels…</p>
+          <div class="progress-mini" data-progress-bar="b1-" data-total="9">
+            <span data-progress-label></span>
+            <div class="progress-bar" style="margin-top:.4rem"><div class="progress-bar__fill"></div></div>
+          </div>
+        </a>
+        <a class="level-card lvl-b2" href="niveaux/b2/index.html">
+          <span class="level-card__badge">B2</span>
+          <h3>Maîtrise</h3>
+          <p>Conditionnels avancés, causatif, wish, connecteurs logiques, idiomes…</p>
+          <div class="progress-mini" data-progress-bar="b2-" data-total="8">
+            <span data-progress-label></span>
+            <div class="progress-bar" style="margin-top:.4rem"><div class="progress-bar__fill"></div></div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- MODULES -->
+    <section class="container">
+      <h2 class="section-title">Modules transversaux</h2>
+      <div class="grid grid--2">
+        <a class="level-card" style="--lvl:var(--color-primary)" href="writing/index.html">
+          <span class="level-card__badge">✍️ Writing</span>
+          <h3>Expression écrite</h3>
+          <p>De la phrase au paragraphe, puis l'article, le discours, les lettres formelle
+             et informelle, l'essai et l'email. Structure, formules utiles et modèles corrigés.</p>
+        </a>
+        <a class="level-card" style="--lvl:var(--color-accent)" href="reading/index.html">
+          <span class="level-card__badge">📖 Reading</span>
+          <h3>Compréhension écrite</h3>
+          <p>Des textes gradués du niveau A1 au B2, suivis de questions de compréhension
+             corrigées automatiquement avec affichage du score.</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- COMMENT ÇA MARCHE -->
+    <section class="container">
+      <h2 class="section-title">Comment utiliser le site</h2>
+      <div class="grid grid--3">
+        <div class="card">
+          <h3>1. Choisissez un chapitre</h3>
+          <p>Chaque chapitre commence par une explication claire en français, des exemples
+             en anglais et un tableau récapitulatif.</p>
+        </div>
+        <div class="card">
+          <h3>2. Faites les exercices</h3>
+          <p>QCM, textes à trous, associations, réécritures… Cliquez sur
+             <b>« Vérifier »</b> pour la correction immédiate et le score.</p>
+        </div>
+        <div class="card">
+          <h3>3. Suivez votre progression</h3>
+          <p>Marquez les chapitres terminés. Vos scores sont sauvegardés
+             automatiquement sur votre appareil.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" data-footer></footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
