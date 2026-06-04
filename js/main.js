@@ -94,7 +94,8 @@
       { href: ROOT + 'niveaux/b1/index.html', key: 'b1', label: 'B1' },
       { href: ROOT + 'niveaux/b2/index.html', key: 'b2', label: 'B2' },
       { href: ROOT + 'writing/index.html', key: 'writing', label: 'Expression écrite' },
-      { href: ROOT + 'reading/index.html', key: 'reading', label: 'Compréhension' }
+      { href: ROOT + 'reading/index.html', key: 'reading', label: 'Compréhension' },
+      { href: ROOT + 'speaking/index.html', key: 'speaking', label: 'Speaking' }
     ];
     var lis = links.map(function (l) {
       var active = (l.key === current) ? ' class="is-active"' : '';
@@ -157,6 +158,7 @@
           '<ul>' +
             '<li><a href="' + ROOT + 'writing/index.html">✍️ Expression écrite</a></li>' +
             '<li><a href="' + ROOT + 'reading/index.html">📖 Compréhension écrite</a></li>' +
+            '<li><a href="' + ROOT + 'speaking/index.html">🗣️ Speaking</a></li>' +
           '</ul>' +
           '<h4 style="margin-top:1rem">Progression</h4>' +
           '<ul>' +
