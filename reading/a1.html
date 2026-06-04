@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lecture A1 — My family | English Class</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body data-root="../" data-page="reading">
+  <header class="site-header" data-nav></header>
+
+  <div class="page-layout">
+    <aside class="sidebar">
+      <h3>Compréhension écrite</h3>
+      <ul>
+        <li><a href="a1.html" class="is-active">Lecture A1 — My family</a></li>
+        <li><a href="a2.html">Lecture A2 — A day in London</a></li>
+        <li><a href="b1.html">Lecture B1 — Working from home</a></li>
+        <li><a href="b2.html">Lecture B2 — The plastic problem</a></li>
+      </ul>
+      <a class="btn btn--ghost btn--block" href="index.html">← Sommaire Reading</a>
+    </aside>
+
+    <main class="main-content">
+      <p class="breadcrumb"><a href="../index.html">Accueil</a> ›
+        <a href="index.html">Compréhension écrite</a> › Lecture A1 — My family</p>
+      <span class="eyebrow tag-a1">A1 · Lecture 1</span>
+      <h1 class="page-title">Lecture A1 — My family</h1>
+      <p class="page-subtitle">Un texte court et simple au présent. Lisez-le, apprenez le
+         vocabulaire, puis répondez aux questions de compréhension.</p>
+
+      <!-- 1. TEXTE -->
+      <h2 class="section-title">📖 Texte</h2>
+      <div class="card">
+        <p>Hello! My name is Lucy. I am ten years old. I live in a small house with my family.
+           We are five people.</p>
+        <p>My father is called John. He is a teacher. My mother is called Mary. She is a nurse.
+           I have one brother and one sister. My brother is Tom. He is twelve. My sister is Emma.
+           She is six.</p>
+        <p>We have a dog. His name is Max. He is black and white. We love Max very much.
+           Every morning, my mother makes breakfast and we eat together. I am very happy
+           with my family.</p>
+      </div>
+
+      <!-- 2. VOCABULAIRE -->
+      <h2 class="section-title">🔤 Vocabulaire utile</h2>
+      <div class="table-wrap">
+        <table class="recap">
+          <thead><tr><th>English</th><th>Français</th></tr></thead>
+          <tbody>
+            <tr><td class="en">family</td><td>famille</td></tr>
+            <tr><td class="en">father</td><td>père</td></tr>
+            <tr><td class="en">mother</td><td>mère</td></tr>
+            <tr><td class="en">brother</td><td>frère</td></tr>
+            <tr><td class="en">sister</td><td>sœur</td></tr>
+            <tr><td class="en">teacher</td><td>professeur</td></tr>
+            <tr><td class="en">nurse</td><td>infirmière</td></tr>
+            <tr><td class="en">breakfast</td><td>petit-déjeuner</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- 3. QUESTIONS -->
+      <h2 class="section-title">📝 Questions de compréhension</h2>
+      <p>Lisez bien le texte, puis faites les exercices et cliquez sur <b>« Vérifier »</b>.
+         Votre score est enregistré.</p>
+      <div id="exercises"></div>
+
+      <div class="mark-done-bar" id="chapter-summary"></div>
+
+      <nav class="chapter-nav">
+        <a class="btn btn--outline" href="index.html">← Sommaire Reading</a>
+        <a class="btn btn--primary" href="a2.html">Lecture suivante : A day in London →</a>
+      </nav>
+    </main>
+  </div>
+
+  <footer class="site-footer" data-footer></footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/exercises.js"></script>
+  <script>
+    EnglishApp.initChapter({
+      id: "reading-a1",
+      exercises: [
+        {
+          type: "qcm",
+          title: "Exercice 1 — Compréhension du texte",
+          instructions: "Choisissez la bonne réponse d'après le texte.",
+          items: [
+            { q: "How old is Lucy?", options: ["Six", "Ten", "Twelve"], answer: 1,
+              explain: "The text says: I am ten years old." },
+            { q: "What is Lucy's father's job?", options: ["A nurse", "A teacher", "A doctor"], answer: 1,
+              explain: "Her father John is a teacher." },
+            { q: "How many people are in the family?", options: ["Three", "Four", "Five"], answer: 2,
+              explain: "We are five people." },
+            { q: "What is the dog's name?", options: ["Max", "Tom", "Emma"], answer: 0,
+              explain: "We have a dog. His name is Max." },
+            { q: "What colour is the dog?", options: ["Brown", "Black and white", "Grey"], answer: 1,
+              explain: "He is black and white." }
+          ]
+        },
+        {
+          type: "fill",
+          title: "Exercice 2 — Complétez d'après le texte",
+          instructions: "Écrivez le mot manquant exactement comme dans le texte.",
+          items: [
+            { text: "Lucy's mother is a [[nurse]]." },
+            { text: "Lucy has one brother and one [[sister]]." },
+            { text: "Her brother is called [[Tom]]." },
+            { text: "Every morning, her mother makes [[breakfast|the breakfast]]." }
+          ]
+        },
+        {
+          type: "quiz",
+          title: "Mini-quiz de fin de lecture",
+          instructions: "Vérifiez votre compréhension.",
+          items: [
+            { q: "How old is Emma?", options: ["Six", "Ten", "Twelve"], answer: 0,
+              explain: "My sister is Emma. She is six." },
+            { q: "Does the family love the dog?", options: ["Yes, very much", "No", "The text does not say"], answer: 0,
+              explain: "We love Max very much." },
+            { q: "What does \"nurse\" mean in French?", options: ["professeur", "infirmière", "médecin"], answer: 1 }
+          ]
+        }
+      ]
+    });
+  </script>
+</body>
+</html>

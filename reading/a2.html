@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lecture A2 — A day in London | English Class</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body data-root="../" data-page="reading">
+  <header class="site-header" data-nav></header>
+
+  <div class="page-layout">
+    <aside class="sidebar">
+      <h3>Compréhension écrite</h3>
+      <ul>
+        <li><a href="a1.html">Lecture A1 — My family</a></li>
+        <li><a href="a2.html" class="is-active">Lecture A2 — A day in London</a></li>
+        <li><a href="b1.html">Lecture B1 — Working from home</a></li>
+        <li><a href="b2.html">Lecture B2 — The plastic problem</a></li>
+      </ul>
+      <a class="btn btn--ghost btn--block" href="index.html">← Sommaire Reading</a>
+    </aside>
+
+    <main class="main-content">
+      <p class="breadcrumb"><a href="../index.html">Accueil</a> ›
+        <a href="index.html">Compréhension écrite</a> › Lecture A2 — A day in London</p>
+      <span class="eyebrow tag-a2">A2 · Lecture 2</span>
+      <h1 class="page-title">Lecture A2 — A day in London</h1>
+      <p class="page-subtitle">Un récit au passé. Lisez l'histoire d'une journée à Londres,
+         apprenez le vocabulaire, puis répondez aux questions.</p>
+
+      <!-- 1. TEXTE -->
+      <h2 class="section-title">📖 Texte</h2>
+      <div class="card">
+        <p>Last Saturday, Anna and her friend Paul visited London for the day. They took an early
+           train from Brighton and arrived at Victoria Station at nine o'clock in the morning.</p>
+        <p>First, they walked to Buckingham Palace and watched the guards. Then they took a red bus
+           to the British Museum. Anna loved the Egyptian rooms, but Paul preferred the Greek statues.
+           At one o'clock, they were hungry, so they ate fish and chips in a small café near the river.</p>
+        <p>In the afternoon, they went on the London Eye. From the top, they saw the whole city.
+           It started to rain, so they bought two umbrellas. In the evening, they were very tired but
+           very happy. They took the last train home and talked about their wonderful day.</p>
+      </div>
+
+      <!-- 2. VOCABULAIRE -->
+      <h2 class="section-title">🔤 Vocabulaire utile</h2>
+      <div class="table-wrap">
+        <table class="recap">
+          <thead><tr><th>English</th><th>Français</th></tr></thead>
+          <tbody>
+            <tr><td class="en">to visit</td><td>visiter</td></tr>
+            <tr><td class="en">early train</td><td>train tôt le matin</td></tr>
+            <tr><td class="en">guards</td><td>gardes</td></tr>
+            <tr><td class="en">hungry</td><td>affamé(e)</td></tr>
+            <tr><td class="en">river</td><td>fleuve, rivière</td></tr>
+            <tr><td class="en">umbrella</td><td>parapluie</td></tr>
+            <tr><td class="en">tired</td><td>fatigué(e)</td></tr>
+            <tr><td class="en">wonderful</td><td>merveilleux</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- 3. QUESTIONS -->
+      <h2 class="section-title">📝 Questions de compréhension</h2>
+      <p>Lisez bien le texte, puis faites les exercices et cliquez sur <b>« Vérifier »</b>.
+         Votre score est enregistré.</p>
+      <div id="exercises"></div>
+
+      <div class="mark-done-bar" id="chapter-summary"></div>
+
+      <nav class="chapter-nav">
+        <a class="btn btn--outline" href="a1.html">← Lecture précédente : My family</a>
+        <a class="btn btn--primary" href="b1.html">Lecture suivante : Working from home →</a>
+      </nav>
+    </main>
+  </div>
+
+  <footer class="site-footer" data-footer></footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/exercises.js"></script>
+  <script>
+    EnglishApp.initChapter({
+      id: "reading-a2",
+      exercises: [
+        {
+          type: "qcm",
+          title: "Exercice 1 — Compréhension du texte",
+          instructions: "Choisissez la bonne réponse d'après le texte.",
+          items: [
+            { q: "When did Anna and Paul go to London?", options: ["Last Sunday", "Last Saturday", "Last Monday"], answer: 1,
+              explain: "Last Saturday, Anna and her friend Paul visited London." },
+            { q: "Where did they arrive in the morning?", options: ["Victoria Station", "the British Museum", "the London Eye"], answer: 0,
+              explain: "They arrived at Victoria Station at nine o'clock." },
+            { q: "What did they eat at one o'clock?", options: ["Pizza", "Fish and chips", "Sandwiches"], answer: 1,
+              explain: "They ate fish and chips in a small café near the river." },
+            { q: "Why did they buy umbrellas?", options: ["It started to rain", "It was cold", "They were a gift"], answer: 0,
+              explain: "It started to rain, so they bought two umbrellas." }
+          ]
+        },
+        {
+          type: "fill",
+          title: "Exercice 2 — Complétez d'après le texte",
+          instructions: "Écrivez le mot manquant exactement comme dans le texte.",
+          items: [
+            { text: "They took an early [[train]] from Brighton." },
+            { text: "At Buckingham Palace, they watched the [[guards]]." },
+            { text: "In the afternoon, they went on the London [[Eye]]." },
+            { text: "In the evening, they were very [[tired]] but very happy." }
+          ]
+        },
+        {
+          type: "quiz",
+          title: "Mini-quiz de fin de lecture",
+          instructions: "Vérifiez votre compréhension.",
+          items: [
+            { q: "Which part of the British Museum did Anna love?", options: ["The Greek statues", "The Egyptian rooms", "The café"], answer: 1,
+              explain: "Anna loved the Egyptian rooms, but Paul preferred the Greek statues." },
+            { q: "Overall, how was their day?", options: ["Boring", "Wonderful", "Short"], answer: 1,
+              explain: "They talked about their wonderful day." },
+            { q: "What does \"umbrella\" mean in French?", options: ["parapluie", "manteau", "chapeau"], answer: 0 }
+          ]
+        }
+      ]
+    });
+  </script>
+</body>
+</html>

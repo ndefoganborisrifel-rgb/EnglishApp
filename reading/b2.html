@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lecture B2 — The plastic problem | English Class</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body data-root="../" data-page="reading">
+  <header class="site-header" data-nav></header>
+
+  <div class="page-layout">
+    <aside class="sidebar">
+      <h3>Compréhension écrite</h3>
+      <ul>
+        <li><a href="a1.html">Lecture A1 — My family</a></li>
+        <li><a href="a2.html">Lecture A2 — A day in London</a></li>
+        <li><a href="b1.html">Lecture B1 — Working from home</a></li>
+        <li><a href="b2.html" class="is-active">Lecture B2 — The plastic problem</a></li>
+      </ul>
+      <a class="btn btn--ghost btn--block" href="index.html">← Sommaire Reading</a>
+    </aside>
+
+    <main class="main-content">
+      <p class="breadcrumb"><a href="../index.html">Accueil</a> ›
+        <a href="index.html">Compréhension écrite</a> › Lecture B2 — The plastic problem</p>
+      <span class="eyebrow tag-b2">B2 · Lecture 4</span>
+      <h1 class="page-title">Lecture B2 — The plastic problem</h1>
+      <p class="page-subtitle">Un article argumentatif sur la pollution plastique. Lisez le texte,
+         apprenez le vocabulaire, puis répondez aux questions de compréhension.</p>
+
+      <!-- 1. TEXTE -->
+      <h2 class="section-title">📖 Texte</h2>
+      <div class="card">
+        <p>Plastic was once celebrated as a miracle material. It is cheap, light, strong and easy to
+           shape, so it quickly found its way into almost every part of our lives. Yet the very
+           qualities that make plastic so useful have turned it into one of the greatest environmental
+           threats of our time.</p>
+        <p>The scale of the problem is hard to imagine. Every year, the world produces around four
+           hundred million tonnes of plastic, and a large share is used only once before being thrown
+           away. Bottles, bags and packaging often end up in rivers and oceans, where they break down
+           into tiny fragments called microplastics. These fragments have now been found in fish, in
+           drinking water, and even in human blood. Because most plastic takes centuries to decompose,
+           the waste we create today will still be here long after we are gone.</p>
+        <p>Some people argue that recycling is the answer. Unfortunately, less than ten percent of all
+           plastic ever made has actually been recycled. The rest is burned, buried, or simply left in
+           the environment. Recycling alone, therefore, cannot solve a problem of this size.</p>
+        <p>A more effective approach is to reduce the amount of plastic we produce in the first place.
+           Governments can ban unnecessary single-use items, companies can design products that last
+           longer, and consumers can refuse plastic they do not need. None of these measures is enough
+           on its own, but together they could make a real difference. The plastic problem was created
+           by human choices, and only different human choices will solve it.</p>
+      </div>
+
+      <!-- 2. VOCABULAIRE -->
+      <h2 class="section-title">🔤 Vocabulaire utile</h2>
+      <div class="table-wrap">
+        <table class="recap">
+          <thead><tr><th>English</th><th>Français</th></tr></thead>
+          <tbody>
+            <tr><td class="en">threat</td><td>menace</td></tr>
+            <tr><td class="en">waste</td><td>déchets</td></tr>
+            <tr><td class="en">packaging</td><td>emballage</td></tr>
+            <tr><td class="en">microplastics</td><td>microplastiques</td></tr>
+            <tr><td class="en">to decompose</td><td>se décomposer</td></tr>
+            <tr><td class="en">to recycle</td><td>recycler</td></tr>
+            <tr><td class="en">single-use</td><td>à usage unique</td></tr>
+            <tr><td class="en">to ban</td><td>interdire</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- 3. QUESTIONS -->
+      <h2 class="section-title">📝 Questions de compréhension</h2>
+      <p>Lisez bien le texte, puis faites les exercices et cliquez sur <b>« Vérifier »</b>.
+         Votre score est enregistré.</p>
+      <div id="exercises"></div>
+
+      <div class="mark-done-bar" id="chapter-summary"></div>
+
+      <nav class="chapter-nav">
+        <a class="btn btn--outline" href="b1.html">← Lecture précédente : Working from home</a>
+        <a class="btn btn--primary" href="index.html">Retour au sommaire Reading →</a>
+      </nav>
+    </main>
+  </div>
+
+  <footer class="site-footer" data-footer></footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/exercises.js"></script>
+  <script>
+    EnglishApp.initChapter({
+      id: "reading-b2",
+      exercises: [
+        {
+          type: "qcm",
+          title: "Exercice 1 — Compréhension du texte",
+          instructions: "Choisissez la bonne réponse d'après le texte.",
+          items: [
+            { q: "Why was plastic once celebrated?", options: ["It is cheap, light, strong and easy to shape", "It is rare and expensive", "It decomposes very fast"], answer: 0,
+              explain: "Plastic is cheap, light, strong and easy to shape." },
+            { q: "How much plastic does the world produce every year?", options: ["About four million tonnes", "About four hundred million tonnes", "About four billion tonnes"], answer: 1,
+              explain: "The world produces around four hundred million tonnes of plastic." },
+            { q: "Where have microplastics been found, according to the text?", options: ["Only in the ocean", "In fish, drinking water and human blood", "Only in the air"], answer: 1,
+              explain: "These fragments have been found in fish, in drinking water, and even in human blood." },
+            { q: "What percentage of plastic has actually been recycled?", options: ["Less than ten percent", "About fifty percent", "More than ninety percent"], answer: 0,
+              explain: "Less than ten percent of all plastic ever made has been recycled." },
+            { q: "What does the writer say is a more effective approach?", options: ["Burning more plastic", "Reducing the amount of plastic we produce", "Building more landfills"], answer: 1,
+              explain: "A more effective approach is to reduce the amount of plastic we produce in the first place." }
+          ]
+        },
+        {
+          type: "fill",
+          title: "Exercice 2 — Vocabulaire en contexte",
+          instructions: "Complétez avec un mot du texte.",
+          items: [
+            { text: "Plastic has become one of the greatest environmental [[threats|threat]] of our time." },
+            { text: "Tiny fragments of plastic are called [[microplastics]]." },
+            { text: "Governments can [[ban]] unnecessary single-use items." },
+            { text: "Most plastic takes [[centuries]] to decompose." }
+          ]
+        },
+        {
+          type: "rewrite",
+          title: "Exercice 3 — Réponse complète",
+          instructions: "Répondez par une phrase complète, d'après le texte.",
+          items: [
+            { q: "According to the writer, why can recycling alone not solve the problem? (Full sentence.)",
+              accept: [
+                "Because less than ten percent of all plastic has been recycled.",
+                "Because less than ten percent of all plastic ever made has been recycled.",
+                "Recycling alone cannot solve the problem because less than ten percent of plastic has been recycled.",
+                "Because less than 10 percent of all plastic has been recycled.",
+                "Because only less than ten percent of plastic has been recycled."
+              ] }
+          ]
+        },
+        {
+          type: "quiz",
+          title: "Mini-quiz de fin de lecture",
+          instructions: "Vérifiez votre compréhension.",
+          items: [
+            { q: "What is the writer's main argument?", options: ["Plastic is harmless", "We must reduce plastic, not only recycle it", "Recycling solves everything"], answer: 1,
+              explain: "Recycling alone cannot solve the problem; reducing production is more effective." },
+            { q: "According to the last paragraph, what created the plastic problem?", options: ["Natural disasters", "Human choices", "Animals"], answer: 1,
+              explain: "The plastic problem was created by human choices." },
+            { q: "What does \"single-use\" mean in French?", options: ["réutilisable", "à usage unique", "fait main"], answer: 1 }
+          ]
+        }
+      ]
+    });
+  </script>
+</body>
+</html>

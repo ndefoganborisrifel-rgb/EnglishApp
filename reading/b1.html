@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lecture B1 — Working from home | English Class</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body data-root="../" data-page="reading">
+  <header class="site-header" data-nav></header>
+
+  <div class="page-layout">
+    <aside class="sidebar">
+      <h3>Compréhension écrite</h3>
+      <ul>
+        <li><a href="a1.html">Lecture A1 — My family</a></li>
+        <li><a href="a2.html">Lecture A2 — A day in London</a></li>
+        <li><a href="b1.html" class="is-active">Lecture B1 — Working from home</a></li>
+        <li><a href="b2.html">Lecture B2 — The plastic problem</a></li>
+      </ul>
+      <a class="btn btn--ghost btn--block" href="index.html">← Sommaire Reading</a>
+    </aside>
+
+    <main class="main-content">
+      <p class="breadcrumb"><a href="../index.html">Accueil</a> ›
+        <a href="index.html">Compréhension écrite</a> › Lecture B1 — Working from home</p>
+      <span class="eyebrow tag-b1">B1 · Lecture 3</span>
+      <h1 class="page-title">Lecture B1 — Working from home</h1>
+      <p class="page-subtitle">Un article d'opinion sur le télétravail. Lisez le texte,
+         apprenez le vocabulaire, puis répondez aux questions de compréhension.</p>
+
+      <!-- 1. TEXTE -->
+      <h2 class="section-title">📖 Texte</h2>
+      <div class="card">
+        <p>Ten years ago, almost everybody travelled to an office every morning. Today, millions of
+           people work from home, and many of them say they will never go back to the old way.</p>
+        <p>There are clear advantages. Workers save time and money because they do not commute.
+           They can start earlier, take a short break for lunch, and spend more time with their
+           families. Some companies have also noticed that employees are more productive when they
+           are not interrupted by colleagues all day. For people who live far from big cities,
+           remote work opens doors that were closed before.</p>
+        <p>However, working from home is not perfect. Many employees feel lonely and miss the social
+           contact of the office. It can be difficult to separate work and private life, and some
+           people end up working longer hours than before. Younger workers, in particular, often
+           learn faster when they sit next to experienced colleagues.</p>
+        <p>In my opinion, the best solution is a hybrid model: two or three days at home and the rest
+           in the office. This way, we keep the freedom of remote work without losing the human side
+           of a team. The future of work is probably not fully remote, but it will certainly never be
+           the same again.</p>
+      </div>
+
+      <!-- 2. VOCABULAIRE -->
+      <h2 class="section-title">🔤 Vocabulaire utile</h2>
+      <div class="table-wrap">
+        <table class="recap">
+          <thead><tr><th>English</th><th>Français</th></tr></thead>
+          <tbody>
+            <tr><td class="en">to commute</td><td>faire le trajet domicile-travail</td></tr>
+            <tr><td class="en">advantage</td><td>avantage</td></tr>
+            <tr><td class="en">productive</td><td>productif</td></tr>
+            <tr><td class="en">colleague</td><td>collègue</td></tr>
+            <tr><td class="en">lonely</td><td>seul, isolé</td></tr>
+            <tr><td class="en">to miss</td><td>manquer (regretter)</td></tr>
+            <tr><td class="en">hybrid model</td><td>modèle hybride</td></tr>
+            <tr><td class="en">freedom</td><td>liberté</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- 3. QUESTIONS -->
+      <h2 class="section-title">📝 Questions de compréhension</h2>
+      <p>Lisez bien le texte, puis faites les exercices et cliquez sur <b>« Vérifier »</b>.
+         Votre score est enregistré.</p>
+      <div id="exercises"></div>
+
+      <div class="mark-done-bar" id="chapter-summary"></div>
+
+      <nav class="chapter-nav">
+        <a class="btn btn--outline" href="a2.html">← Lecture précédente : A day in London</a>
+        <a class="btn btn--primary" href="b2.html">Lecture suivante : The plastic problem →</a>
+      </nav>
+    </main>
+  </div>
+
+  <footer class="site-footer" data-footer></footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/exercises.js"></script>
+  <script>
+    EnglishApp.initChapter({
+      id: "reading-b1",
+      exercises: [
+        {
+          type: "qcm",
+          title: "Exercice 1 — Compréhension du texte",
+          instructions: "Choisissez la bonne réponse d'après le texte.",
+          items: [
+            { q: "According to the text, why do remote workers save money?", options: ["They eat less", "They do not commute", "They earn more"], answer: 1,
+              explain: "Workers save time and money because they do not commute." },
+            { q: "What have some companies noticed about employees at home?", options: ["They are more productive", "They are always late", "They work less"], answer: 0,
+              explain: "Employees are more productive when they are not interrupted by colleagues." },
+            { q: "What is a disadvantage mentioned in the text?", options: ["People feel lonely", "People earn nothing", "Offices close down"], answer: 0,
+              explain: "Many employees feel lonely and miss the social contact of the office." },
+            { q: "Which workers often learn faster next to experienced colleagues?", options: ["Older workers", "Younger workers", "Managers"], answer: 1,
+              explain: "Younger workers, in particular, often learn faster next to experienced colleagues." }
+          ]
+        },
+        {
+          type: "fill",
+          title: "Exercice 2 — Vocabulaire en contexte",
+          instructions: "Complétez avec un mot du texte.",
+          items: [
+            { text: "Workers do not [[commute]], so they save time and money." },
+            { text: "Many employees feel [[lonely]] when they work alone at home." },
+            { text: "The writer prefers a [[hybrid]] model with some days at home and some at the office." },
+            { text: "Remote work gives people more [[freedom]]." }
+          ]
+        },
+        {
+          type: "rewrite",
+          title: "Exercice 3 — Réponse complète",
+          instructions: "Répondez par une phrase complète, d'après le texte.",
+          items: [
+            { q: "What solution does the writer recommend? (Answer with a full sentence.)",
+              accept: [
+                "The writer recommends a hybrid model.",
+                "The writer recommends a hybrid model with two or three days at home.",
+                "He recommends a hybrid model.",
+                "A hybrid model.",
+                "The best solution is a hybrid model.",
+                "The best solution is a hybrid model with two or three days at home."
+              ] }
+          ]
+        },
+        {
+          type: "quiz",
+          title: "Mini-quiz de fin de lecture",
+          instructions: "Vérifiez votre compréhension.",
+          items: [
+            { q: "What is the writer's overall opinion about the future of work?", options: ["It will be fully remote", "It will never be the same again", "It will return to the old way"], answer: 1,
+              explain: "It will certainly never be the same again." },
+            { q: "Why is remote work good for people far from big cities?", options: ["It opens doors that were closed before", "It pays more", "It is shorter"], answer: 0,
+              explain: "Remote work opens doors that were closed before." },
+            { q: "What does \"to miss\" mean here in French?", options: ["rater un train", "manquer (regretter)", "réussir"], answer: 1 }
+          ]
+        }
+      ]
+    });
+  </script>
+</body>
+</html>
