@@ -101,12 +101,14 @@
       return '<li><a href="' + l.href + '"' + active + '>' + l.label + '</a></li>';
     }).join('');
 
+    var iconMenu = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>';
+    var iconClose = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>';
     host.innerHTML =
       '<div class="nav">' +
         '<a class="nav__brand" href="' + ROOT + 'index.html">' +
           '<span class="nav__logo">EN</span><span>English&nbsp;Class</span>' +
         '</a>' +
-        '<button class="nav__toggle" aria-label="Menu" aria-expanded="false">&#9776;</button>' +
+        '<button class="nav__toggle" aria-label="Menu" aria-expanded="false">' + iconMenu + '</button>' +
         '<ul class="nav__links">' + lis + '</ul>' +
       '</div>';
 
@@ -115,6 +117,14 @@
     toggle.addEventListener('click', function () {
       var open = menu.classList.toggle('is-open');
       toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      toggle.innerHTML = open ? iconClose : iconMenu;
+    });
+    document.addEventListener('click', function (e) {
+      if (menu.classList.contains('is-open') && !host.contains(e.target)) {
+        menu.classList.remove('is-open');
+        toggle.setAttribute('aria-expanded', 'false');
+        toggle.innerHTML = iconMenu;
+      }
     });
   }
 
@@ -127,9 +137,11 @@
     host.innerHTML =
       '<div class="site-footer__inner">' +
         '<div>' +
-          '<h4>English Class</h4>' +
-          '<p style="max-width:320px;font-size:0.9rem;">Plateforme d\'apprentissage de l\'anglais ' +
-          'pour francophones, du niveau A1 au B2. Cours, exemples et exercices auto-corrigés.</p>' +
+          '<div style="display:flex;align-items:center;gap:10px;margin-bottom:12px">' +
+            '<span style="width:34px;height:34px;background:linear-gradient(135deg,#6366f1,#4338ca);color:#fff;border-radius:9px;display:grid;place-items:center;font-weight:800;font-size:.95rem;flex-shrink:0">EN</span>' +
+            '<span style="font-weight:800;color:#fff;font-size:1.05rem">English Class</span>' +
+          '</div>' +
+          '<p style="max-width:300px;font-size:0.875rem;line-height:1.6">Plateforme d\'apprentissage de l\'anglais pour francophones, du niveau A1 au B2. Cours, exemples et exercices auto-corrigés.</p>' +
         '</div>' +
         '<div>' +
           '<h4>Niveaux</h4>' +
@@ -143,10 +155,18 @@
         '<div>' +
           '<h4>Modules</h4>' +
           '<ul>' +
-            '<li><a href="' + ROOT + 'writing/index.html">Expression écrite</a></li>' +
-            '<li><a href="' + ROOT + 'reading/index.html">Compréhension écrite</a></li>' +
+            '<li><a href="' + ROOT + 'writing/index.html">✍️ Expression écrite</a></li>' +
+            '<li><a href="' + ROOT + 'reading/index.html">📖 Compréhension écrite</a></li>' +
+          '</ul>' +
+          '<h4 style="margin-top:1rem">Progression</h4>' +
+          '<ul>' +
+            '<li><a href="' + ROOT + 'index.html#niveaux">Tous les niveaux</a></li>' +
           '</ul>' +
         '</div>' +
+      '</div>' +
+      '<div class="site-footer__copy">' +
+        '<span>© 2025 English Class · Tous droits réservés</span>' +
+        '<span>Plateforme 100 % gratuite · Aucune inscription requise</span>' +
       '</div>';
   }
 
